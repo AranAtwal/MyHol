@@ -1,0 +1,103 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holiday_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.aranatwal.courseworkv3.HolidayFragment">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="100">-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:id="@+id/basic_details_layout">
+
+
+                <TextView
+                    android:id="@+id/holiday_date_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="8pt"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/holiday_location_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="10pt"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/holiday_description_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="8pt"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <fragment
+                android:id="@+id/map_holiday"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/basic_details_layout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Places Visited"
+                android:id="@+id/pv_title"
+                android:visibility="gone"
+                android:layout_below="@+id/map_holiday" />
+            
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pv_list_view"
+                android:layout_below="@+id/pv_title">
+            </ListView>
+
+            <GridView
+                android:id="@+id/hol_images"
+                android:layout_below="@+id/pv_list_view"
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:numColumns="3" />
+
+
+        </RelativeLayout>
+
+
+        </FrameLayout>
+    </ScrollView>

@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aranatwal.courseworkv3.InterestingPlaceFragment">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:id="@+id/rel_layout">
+
+        <fragment
+            android:id="@+id/map_interests"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/interest_fab_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="6dp"
+                android:src="@mipmap/ic_nearby_white"
+                android:visibility="invisible"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/interest_fab_1"
+                app:layout_constraintEnd_toEndOf="@+id/interest_fab_0"
+                app:pressedTranslationZ="12dp" />
+
+            <TextView
+                android:id="@+id/fab_search_nearby"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:paddingBottom="2dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="2dp"
+                android:text="Nearby"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/interest_fab_2"
+                app:layout_constraintEnd_toStartOf="@+id/interest_fab_2" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/interest_fab_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="6dp"
+                android:src="@mipmap/ic_filtered_white"
+                android:visibility="invisible"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/interest_fab_0"
+                app:layout_constraintEnd_toEndOf="@+id/interest_fab_0"
+                app:pressedTranslationZ="12dp" />
+
+            <TextView
+                android:id="@+id/fab_filtered_search"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:paddingBottom="2dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="2dp"
+                android:text="Filtered"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/interest_fab_1"
+                app:layout_constraintEnd_toStartOf="@+id/interest_fab_1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/interest_fab_0"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="24dp"
+                android:elevation="6dp"
+                android:src="@mipmap/ic_search_white"
+                android:visibility="visible"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:pressedTranslationZ="12dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

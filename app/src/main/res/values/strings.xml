@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Holiday App</string>
+
+    <string name="APIKEY">AIzaSyCSMfcBJKFtb0twhTnNNlg5yesxAyzuqzU</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    //menu items, official titles
+
+    <string name="menu_home">Home</string>
+    <string name="menu_my_holidays">My Holidays</string>
+    <string name="menu_places_visited">Places Visited</string>
+    <string name="menu_travel_gallery">Travel Gallery</string>
+    <string name="menu_places_of_interest">Places of Interest</string>
+
+    <string name="menu_settings">Account Settings</string>
+
+    <string name="menu_holiday">Holiday</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_item_clicked" />
+
+
+    <string name="holiday_details_title">Hol TITLE!</string>
+
+    <string name="holiday_notes">Hol DESCRIPTION!</string>
+    <string name="title_activity_media">MediaActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

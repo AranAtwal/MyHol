@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aranatwal.courseworkv3.PhotoGalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top_layout">
+
+        <TextView
+            android:id="@+id/all_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel Gallery Photos"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/photo_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:layout_below="@+id/all_photos" />
+
+        <TextView
+            android:id="@+id/all_photos_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Holiday Photos"
+            android:layout_below="@+id/photo_grid"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/photo_grid_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:layout_below="@+id/all_photos_holiday" />
+
+        <TextView
+            android:id="@+id/all_photos_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Visited Photos"
+            android:layout_below="@+id/photo_grid_2"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/photo_grid_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:layout_below="@+id/all_photos_places"/>
+
+    </RelativeLayout>
+</FrameLayout>

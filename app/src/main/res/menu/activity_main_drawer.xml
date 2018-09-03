@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_my_holidays"
+            android:icon="@drawable/ic_menu_holiday"
+            android:title="@string/menu_my_holidays" />
+        <item
+            android:id="@+id/nav_places_visited"
+            android:icon="@drawable/ic_menu_place"
+            android:title="@string/menu_places_visited" />
+        <item
+            android:id="@+id/nav_travel_gallery"
+            android:icon="@drawable/ic_menu_travel"
+            android:title="@string/menu_travel_gallery" />
+        <item
+            android:id="@+id/nav_places_of_interest"
+            android:icon="@drawable/ic_menu_interest"
+            android:title="@string/menu_places_of_interest" />
+    </group>
+
+</menu>
